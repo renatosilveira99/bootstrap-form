@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Formulário Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light bg-primary mb-5 mt-3 ">
+        <h1 class="text-light display-4">Cadastro de cliente</h1>
+        <div class="float-sm-right">
+          <span class="navbar-brand h1 text-light"><label class="text-danger">*&nbsp</label>Campo obrigatório</span>
+        </div>
+      </nav>
+
+
+
+      <form>
+        <!-- Nome -->
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Nome<label class="text-danger">*</label></label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <!-- CPF, Nascimento e Sexo -->
+        <div class="form-group row">
+          <label class="col-sm-1 col-form-label">CPF<label class="text-danger">*</label></label>
+          <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="Apenas números">
+          </div>
+          <label class="col-sm-1.1 col-form-label">Nascimento<label class="text-danger">*</label></label>
+          <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+          <label class="col-sm-1 col-form-label">Sexo<label class="text-danger">*</label></label>
+          <label class="radio-inline col-form-label mr-5">
+            <input type="radio" name="optradio" checked>&nbsp;Masculino
+          </label>
+          <label class="radio-inline col-form-label">
+            <input type="radio" name="optradio">&nbsp;Feminino
+          </label>
+        </div>
+        <!-- Telefones -->
+        <div class="form-group row">
+          <label class="col-1 col-form-label pr-0">Telefone<label class="text-danger">*</label></label>
+          <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+          </div>
+          <label class="col-1 col-form-label">Telefone</label>
+          <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group row">
+          <label class="col-sm-1 col-form-label">Email<label class="text-danger">*</label></label>
+          <div class="col-sm-7">
+            <label style="padding-top: 5px; position: absolute; padding-left: 7px; background-color: lightgray; height: 38px; width: 35px; border-radius: 5px;">📧</label>
+              <input type="text" class="form-control pl-5">
+          </div>
+      </div>
+      <!-- CEP -->
+      <div class="form-group row">
+        <label class="col-sm-1 col-form-label">CEP<label class="text-danger">*</label></label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control">
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" style="height: 35px; padding-top: 0;">Pesquisar</button>
+    </div>
+    <!-- Endereço, Número, Bairro -->
+    <div class="form-group row">
+      <label class="col-sm-1 col-form-label pl-0 ml-3">Endereço<label class="text-danger">*</label></label>
+      <div class="col-sm-3">
+          <label style="padding-top: 5px; position: absolute; padding-left: 7px; background-color: lightgray; height: 38px; width: 40px; border-radius: 5px;">Rua</label>
+          <input type="text" class="form-control pl-5">
+      </div>
+      <div class="col-sm-3">
+        <label style="padding-top: 5px; position: absolute; padding-left: 7px; background-color: lightgray; height: 38px; width: 40px; border-radius: 5px;">Nº<label class="text-danger">*</label></label>
+          <input type="text" class="form-control pl-5">
+      </div>
+      <div class="col-sm-4 mb-4">
+        <label style="padding-top: 5px; position: absolute; padding-left: 7px; background-color: lightgray; height: 38px; width: 55px; border-radius: 5px;">Bairro</label>
+          <input type="text" class="form-control pl-5"> 
+      </div>
+
+   
+      <div class="col-sm-3 ml-2">
+        <label style="padding-top: 5px; position: absolute; padding-left: 7px; background-color: lightgray; height: 38px; width: 60px; border-radius: 5px;">Cidade</label>
+          <input type="text" class="form-control pl-5">
+      </div>
+
+      <div class="col-sm-3">
+        <label style="padding-top: 5px; position: absolute; padding-left: 7px; background-color: lightgray; height: 38px; width: 60px; border-radius: 5px;">Estado</label>
+          <input type="text" class="form-control pl-5">
+      </div>
+
+    </div>
+    <!-- Estado Civil, Filhos -->
+    <div class="form-group row">
+      <label class="mt-2 mr-4 ml-3">Estado Civíl<label class="text-danger">*</label></label>
+      <select class="form-control col-sm-5">
+        <option>Solteiro</option>
+        <option>Casado</option>
+        <option>Divorciado</option>
+        <option>Viúvo</option>
+
+      </select>
+  
+      <label class="mt-2 mr-4 ml-3">Filhos</label>
+      <input type="text" class="form-control col-sm-4" placeholder="Quantos?">
+    </div>
+   <!-- Escolaridade, Profissão -->
+   <div class="form-group row">
+    <label class="mt-2 mr-4 ml-3">Escolaridade<label class="text-danger">*</label></label>
+    <select class="form-control col-sm-5">
+      <option>Ensino Médio incompleto</option>
+      <option>Ensino Médio completo</option>
+      <option>Ensino Superior incompleto</option>
+      <option>Ensino Superior completo</option>
+      <option>Pós graduação</option>
+    </select>
+
+    <label class="mt-2 mr-4 ml-3">Profissão<label class="text-danger">*</label></label>
+    <input type="text" class="form-control col-sm-4">
+  </div>
+  <!-- Encaminhamento, Aluno -->
+  <div class="form-group row">
+    <label class="mt-2 mr-4 ml-3">Encaminhamento</label>
+    <input type="text" class="form-control col-sm-4" placeholder="Instituição">
+
+    <label class="mt-2 mr-4 ml-3">Aluno do IFSULDEMINAS<label class="text-danger">*</label></label>
+    <input type="text" class="form-control col-sm-3" placeholder="Curso">
+  </div>
+  <!-- Como ficou sabendo? -->
+  <div class="form-group row">
+    <label class="mt-2 mr-4 ml-3">Como ficou sabendo do IFSULDEMINAS?</label>
+    <input type="text" class="form-control col-sm-8">
+  </div>
+
+  
+  <h1 class="mt-5">Responsável</h1>
+
+          <!-- Nome -->
+          <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Nome<label class="text-danger">*</label></label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+                <!-- Vinculo, Nascimento e Sexo -->
+                <div class="form-group row">
+                  <label class="col-sm-1 col-form-label">Vínculo com cliente<label class="text-danger">*</label></label>
+                  <div class="col-sm-3">
+                      <input type="text" class="form-control">
+                  </div>
+                  <label class="col-sm-1.1 col-form-label">Nascimento<label class="text-danger">*</label></label>
+                  <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="DD/MM/AAAA">
+                  </div>
+                  <label class="col-sm-1 col-form-label">Sexo<label class="text-danger">*</label></label>
+                  <label class="radio-inline col-form-label mr-5">
+                    <input type="radio" name="optradio" checked>&nbsp;Masculino
+                  </label>
+                  <label class="radio-inline col-form-label">
+                    <input type="radio" name="optradio">&nbsp;Feminino
+                  </label>
+                </div>
+
+                    <!-- Estado Civil, Filhos -->
+    <div class="form-group row">
+      <label class="mt-2 mr-4 ml-3">Estado Civíl<label class="text-danger">*</label></label>
+      <select class="form-control col-sm-5">
+        <option>Solteiro</option>
+        <option>Casado</option>
+        <option>Divorciado</option>
+        <option>Viúvo</option>
+
+      </select>
+  
+      <label class="mt-2 mr-4 ml-3">Filhos</label>
+      <input type="text" class="form-control col-sm-4" placeholder="Quantos?">
+    </div>
+
+       <!-- Escolaridade, Profissão -->
+   <div class="form-group row">
+    <label class="mt-2 mr-4 ml-3">Escolaridade<label class="text-danger">*</label></label>
+    <select class="form-control col-sm-5">
+      <option>Ensino Médio incompleto</option>
+      <option>Ensino Médio completo</option>
+      <option>Ensino Superior incompleto</option>
+      <option>Ensino Superior completo</option>
+      <option>Pós graduação</option>
+    </select>
+
+    <label class="mt-2 mr-4 ml-3">Profissão<label class="text-danger">*</label></label>
+    <input type="text" class="form-control col-sm-4">
+  </div>
+
+   <!-- Telefones -->
+          <div class="form-group row">
+            <label class="col-1 col-form-label pr-0">Telefone<label class="text-danger">*</label></label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+            </div>
+            <label class="col-1 col-form-label">Telefone</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+            </div>
+          </div>
+
+                  <!-- Email -->
+        <div class="form-group row">
+          <label class="col-sm-1 col-form-label">Email<label class="text-danger">*</label></label>
+          <div class="col-sm-7">
+            <label style="padding-top: 5px; position: absolute; padding-left: 7px; background-color: lightgray; height: 38px; width: 35px; border-radius: 5px;">📧</label>
+              <input type="text" class="form-control pl-5">
+          </div>
+      </div>
+
+     <div class="form-group row">
+      <button type="button" class="btn btn-success mr-3">Cadastrar</button>
+      <button type="button" class="btn btn-danger">Cancelar</button>
+     </div>
+
+
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
