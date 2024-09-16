@@ -1,4 +1,4 @@
 # Bootstrap-Form
-Formulário desenvolvido com Bootstrap para a disciplina de programação web 1
+Form developed with Bootstrap for the web programming discipline 1
 
   <img src="/image.png" />
